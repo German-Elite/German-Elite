@@ -1,0 +1,90 @@
+body {
+  min-width: 320px;
+  background-color: #fff;
+  color: #777;
+  font-size: 16px;
+}
+
+#layout.active #menu {
+    left: 160px;
+    width: 160px;
+}
+
+#layout.active .menu-link {
+    left: 160px;
+}
+
+#menu {
+  margin-left: -160px; /* "#menu" width */
+  width: 160px;
+}
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    .header,
+    .content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #layout {
+        padding-left: 160px; /* left col width "#menu" */
+    }
+    #menu {
+        left: 160px;
+    }
+
+    .menu-link {
+        left: 160px;
+    }
+
+    #layout.active .menu-link {
+        left: 160px;
+    }
+}
+
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+      left: 160px;
+    }
+}
+
+.pure-menu-children {
+  left: 10%;
+}
+
+.pure-menu-active>.pure-menu-children, .pure-menu-allow-hover:hover>.pure-menu-children {
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+aside {
+  background: #1f8dd6;
+  margin: 1rem 0;
+  padding: .3rem 1rem;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.content .content-quote {
+    font-family: Georgia,serif;
+    color: #666;
+    font-style: italic;
+    line-height: 1.8;
+    border-left: 5px solid #ddd;
+    padding-left: 1.5em;
+}
