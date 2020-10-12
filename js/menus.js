@@ -4,7 +4,7 @@
 
   // Enable drop-down menus in Pure
   // Inspired by YUI3 gallery-simple-menu by Julien LeComte
-  // [https://github.com/yui/yui3-gallery/blob/master/src/gallery-simple-menu/js/simple-menu.js]
+  // [https://github.com/yui/yui3-gallery/blob/master/src/gallery-simple-menujs/simple-menu.js]
 
   function PureDropdown (dropdownParent) {
     var PREFIX = 'pure-'
