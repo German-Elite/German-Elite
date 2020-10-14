@@ -25,7 +25,7 @@
   function toggleAll (e) {
     var active = 'active'
 
-    e.preventDefault()
+    // e.preventDefault()
     toggleClass(layout, active)
     toggleClass(menu, active)
     toggleClass(menuLink, active)
