@@ -1,9 +1,30 @@
 body {
   min-width: 320px;
-  background-color: #fff;
-  color: #777;
+  background-color: #0f0e17;
+  color: #b2b7bd;
   font-size: 16px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+}
+
+a {
+  color: #ff8906;
+}
+
+.menu-link {
+  background-color: #0f0e17;
+}
+
+#menu .pure-menu-selected, #menu .pure-menu-heading {
+  background-color: #ff8906;
+}
+
+#menu a {
+  color: #fffffe;
+}
+
 
 #layout.active #menu {
     left: 160px;
@@ -72,11 +93,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 aside {
-  background: #1f8dd6;
+  background: #fffffe;
   margin: 1rem 0;
   padding: .3rem 1rem;
   border-radius: 3px;
-  color: #fff;
+  color: #2e2f3e;
   text-align: center;
 }
 
